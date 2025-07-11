@@ -1,3 +1,5 @@
+use crate::traits::emitir_som::EmitirSom;
+
 pub struct Dados {
     pub id: String,
 }
@@ -48,5 +50,11 @@ impl Zoo{
 impl Endereco{
     pub fn new(cidade: String, bairro: String, numero: String, complemento: String) -> Endereco {
         Endereco { cidade, bairro, numero, complemento }
+    }
+}
+
+impl EmitirSom for Animal {
+    fn emitir_som(&self) {
+        println!("O animal {} da espécie {} está emitindo um som!", self.nome, self.especie);
     }
 }
