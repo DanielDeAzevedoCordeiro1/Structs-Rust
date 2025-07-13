@@ -19,6 +19,7 @@ use structs::{
 };
 use traits::emitir_som::EmitirSom;
 use traits::latir::Latir;
+use traits::falar::Falar;
 
 
 fn main() {
@@ -71,8 +72,8 @@ fn main() {
 
    animal.emitir_som();
    animal.latir();
+   pessoa.falar();
 
     println!("{}",animal.to_string());
-
 
 }
