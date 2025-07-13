@@ -1,4 +1,4 @@
-use crate::traits::emitir_som::EmitirSom;
+use crate::traits::{emitir_som::EmitirSom, latir::Latir};
 
 pub struct Dados {
     pub id: String,
@@ -56,5 +56,11 @@ impl Endereco{
 impl EmitirSom for Animal {
     fn emitir_som(&self) {
         println!("O animal {} da espécie {} está emitindo um som!", self.nome, self.especie);
+    }
+}
+
+impl Latir for Animal {
+    fn latir(&self) {
+        println!("O animal {} da espécie {} está latindo!", self.nome, self.especie);
     }
 }
