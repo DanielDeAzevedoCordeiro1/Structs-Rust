@@ -1,3 +1,5 @@
+use crate::traits::falar::Falar;
+
 pub struct Pessoa{
      name: String,
      age: u8
@@ -27,9 +29,10 @@ impl Pessoa{
         format!("{} {}", self.get_name(), self.get_age())
     }
 
+}
 
-
-
-
-
+impl Falar for Pessoa {
+    fn falar(&self) {
+        println!("{} está falando!", self.get_name());
+    }
 }
