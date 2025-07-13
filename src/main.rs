@@ -1,6 +1,7 @@
 mod utils;
 mod math;
 mod structs;
+mod traits;
 
 
 use std::io;
@@ -16,6 +17,8 @@ use structs::{
     carro::Carro,
     animal::{Endereco, Dados, Zoo, Animal}
 };
+use traits::emitir_som::EmitirSom;
+use traits::latir::Latir;
 
 
 fn main() {
@@ -66,6 +69,10 @@ fn main() {
         ))
    );
 
+   animal.emitir_som();
+   animal.latir();
+
     println!("{}",animal.to_string());
+
 
 }
