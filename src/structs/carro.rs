@@ -1,3 +1,5 @@
+use crate::traits::buzinar::Buzinar;
+
 
 pub struct Carro{
     model: String,
@@ -24,5 +26,11 @@ impl Carro{
 
     pub fn to_string(&self) -> String{
         format!("{} {}",self.get_model(),self.age)
+    }
+}
+
+impl Buzinar for Carro {
+    fn buzinar(&self) {
+        println!("{} está buzinando!", self.get_model());
     }
 }
