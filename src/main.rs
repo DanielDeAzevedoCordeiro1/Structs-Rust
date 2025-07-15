@@ -20,6 +20,7 @@ use structs::{
 use traits::emitir_som::EmitirSom;
 use traits::latir::Latir;
 use traits::falar::Falar;
+use traits::buzinar::Buzinar;
 
 
 fn main() {
@@ -73,7 +74,6 @@ fn main() {
    animal.emitir_som();
    animal.latir();
    pessoa.falar();
-
-    println!("{}",animal.to_string());
+   carro.buzinar();
 
 }
