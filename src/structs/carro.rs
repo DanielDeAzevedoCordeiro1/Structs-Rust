@@ -1,4 +1,4 @@
-use crate::traits::buzinar::Buzinar;
+use crate::traits::{acelerar::Acelerar, buzinar::Buzinar};
 
 
 pub struct Carro{
@@ -32,5 +32,11 @@ impl Carro{
 impl Buzinar for Carro {
     fn buzinar(&self) {
         println!("{} está buzinando!", self.get_model());
+    }
+}
+
+impl Acelerar for Carro {
+    fn acelerar(&mut self) {
+        println!("{} está acelerando!", self.get_model());
     }
 }
