@@ -21,7 +21,7 @@ use traits::emitir_som::EmitirSom;
 use traits::latir::Latir;
 use traits::falar::Falar;
 use traits::buzinar::Buzinar;
-
+use traits::acelerar::Acelerar;
 
 fn main() {
 
@@ -75,5 +75,6 @@ fn main() {
    animal.latir();
    pessoa.falar();
    carro.buzinar();
+   carro.acelerar();
 
 }
