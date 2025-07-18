@@ -1,4 +1,4 @@
-use crate::traits::falar::Falar;
+use crate::traits::{falar::Falar, gritar::Gritar};
 
 pub struct Pessoa{
      name: String,
@@ -35,4 +35,11 @@ impl Falar for Pessoa {
     fn falar(&self) {
         println!("{} está falando!", self.get_name());
     }
+}
+
+impl Gritar for Pessoa {
+    fn gritar(&self) {
+        println!("{} está gritando!", self.get_name());
+    }
+    
 }
