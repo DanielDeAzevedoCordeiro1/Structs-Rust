@@ -23,6 +23,7 @@ use traits::falar::Falar;
 use traits::buzinar::Buzinar;
 use traits::acelerar::Acelerar;
 use traits::frear::Frear;
+use traits::gritar::Gritar;
 
 fn main() {
 
@@ -78,5 +79,6 @@ fn main() {
    carro.buzinar();
    carro.acelerar();
    carro.frear();
+   pessoa.gritar();
 
 }
