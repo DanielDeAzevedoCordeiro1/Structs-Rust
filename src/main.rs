@@ -24,6 +24,7 @@ use traits::buzinar::Buzinar;
 use traits::acelerar::Acelerar;
 use traits::frear::Frear;
 use traits::gritar::Gritar;
+use traits::digitando::Digitando;
 
 fn main() {
 
@@ -80,5 +81,7 @@ fn main() {
    carro.acelerar();
    carro.frear();
    pessoa.gritar();
+   pessoa.digitar( "Ola, mundo!");
+
 
 }
