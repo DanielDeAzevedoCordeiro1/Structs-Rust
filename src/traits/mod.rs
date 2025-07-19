@@ -5,3 +5,4 @@ pub mod buzinar;
 pub mod acelerar;
 pub mod frear;
 pub mod gritar;
+pub mod digitando;
