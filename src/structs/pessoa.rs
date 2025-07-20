@@ -1,4 +1,4 @@
-use crate::traits::{digitando::Digitando, falar::Falar, gritar::Gritar};
+use crate::traits::{digitando::Digitando, dormir::Dormir, falar::Falar, gritar::Gritar};
 
 pub struct Pessoa{
      name: String,
@@ -47,5 +47,11 @@ impl Gritar for Pessoa {
 impl Digitando for Pessoa {
     fn digitar(&self, texto: &str) {
         println!("{} está digitando: {}", self.get_name(), texto);
+    }
+}
+
+impl Dormir for Pessoa {
+    fn dormir(&self, duration: u64) {
+        println!("{} está dormindo por {} segundos", self.get_name(), duration);
     }
 }
